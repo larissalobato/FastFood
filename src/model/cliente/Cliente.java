@@ -4,13 +4,11 @@ public class Cliente {
     
     private String cpf;
     private String nome;
-    private int sexo;
     private String telefone;
     
-    public Cliente(String cpf, String nome, int sexo, String telefone) {
+    public Cliente(String cpf, String nome, String telefone) {
         this.cpf = cpf;
         this.nome = nome;
-        this.sexo = sexo;
         this.telefone = telefone;
     }
     
@@ -30,13 +28,6 @@ public class Cliente {
         this.nome = nome;
     }
     
-    public int getSexo(){
-        return this.sexo;
-    }
-    
-    public void setSexo(int sexo){
-        this.sexo = sexo;
-    }
     
     public String getTelefone(){
         return this.telefone;
@@ -50,3 +41,4 @@ public class Cliente {
         return nome;
     }
 }
+

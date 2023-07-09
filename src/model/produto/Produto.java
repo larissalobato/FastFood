@@ -4,12 +4,12 @@ package model.produto;
 
 public class Produto {
     private String codigo;
-    private String nomeProduto;
+    private String nome;
     private double preco;
     
-    public Produto(String codigo, String nomeProduto, double preco) {
+    public Produto(String codigo, String nome, double preco) {
         this.codigo = codigo;
-        this.nomeProduto = nomeProduto;
+        this.nome = nome;
         this.preco = preco;
     }
     
@@ -23,12 +23,12 @@ public class Produto {
 	}
 
 
-	public String getNomeProduto() {
-		return nomeProduto;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomeProduto(String nomeProduto) {
-		this.nomeProduto = nomeProduto;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public double getPreco() {
@@ -42,7 +42,7 @@ public class Produto {
 	public String toString() {
         return String.format("Código: %s\nnomeProduto: %s\nPreco %.2f", 
                             this.codigo + " - " +
-                            this.nomeProduto +
+                            this.nome +
                             this.preco);
     }
 }

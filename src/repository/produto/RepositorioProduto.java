@@ -19,3 +19,5 @@ public interface RepositorioProduto {
     List<Produto> getAll(String cpf);
     
 }
+
+

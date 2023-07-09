@@ -56,7 +56,7 @@ public class RepositorioProdutoLista implements RepositorioProduto {
     public List<Produto> getAll(String codigo) {
         List<Produto> lista = new ArrayList<>();
         for (Produto produto : produtos) {
-            if (produto.getCodigo() == codigo) { /// não tinha esse "!= null"coloquei pq tava dando erro
+            if (produto.getCodigo() == codigo) { 
                 lista.add(produto);
             }
         }
